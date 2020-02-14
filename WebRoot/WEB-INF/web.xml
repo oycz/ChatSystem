@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>chatsystem</display-name>
+
+	<!-- Listener -->
+
+	<listener>
+		<listener-class>org.listener.OnlineUsersListener</listener-class>
+	</listener>
+
+	<!-- Servlet -->
+	<servlet>
+		<servlet-name>LoginCheck</servlet-name>
+		<servlet-class>org.service.index.LoginCheck</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DoRegister</servlet-name>
+		<servlet-class>org.service.index.DoRegister</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Checkout</servlet-name>
+		<servlet-class>org.service.index.Checkout</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SendSocialMessage</servlet-name>
+		<servlet-class>org.service.sociality.SendSocialMessage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ThumbUp</servlet-name>
+		<servlet-class>org.service.sociality.ThumbUp</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FlushThumbUp</servlet-name>
+		<servlet-class>org.service.sociality.FlushThumbUp</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ChatroomSendMessage</servlet-name>
+		<servlet-class>org.service.chatroom.ChatroomSendMessage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddFriend</servlet-name>
+		<servlet-class>org.service.chatroom.AddFriend</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SendFriendReq</servlet-name>
+		<servlet-class>org.service.chatroom.SendFriendReq</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ListenFriendshipReq</servlet-name>
+		<servlet-class>org.service.main.ListenFriendshipReq</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SetFriendshipReqVisited</servlet-name>
+		<servlet-class>org.service.chatroom.SetFriendshipReqVisited</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CheckOnline</servlet-name>
+		<servlet-class>org.service.main.CheckOnline</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SetConversationMessageVisited</servlet-name>
+		<servlet-class>org.service.chatroom.SetConversationMessageVisited</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SendConversationMessage</servlet-name>
+		<servlet-class>org.service.chatroom.SendConversationMessage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ChangeUserInfo</servlet-name>
+		<servlet-class>org.service.main.ChangeUserInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadUserIcon</servlet-name>
+		<servlet-class>org.service.main.UploadUserIcon</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>logAccessUnit</servlet-name>
+		<servlet-class>org.service.main.logAccessUnit</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetStatistics</servlet-name>
+		<servlet-class>org.service.statistics.GetStatistics</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>WordFrequency</servlet-name>
+		<servlet-class>org.service.statistics.WordFrequency</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchPlayer</servlet-name>
+		<servlet-class>org.service.recreation.SearchPlayer</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PlayChess</servlet-name>
+		<servlet-class>org.service.recreation.PlayChess</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>IsPlaying</servlet-name>
+		<servlet-class>org.service.recreation.IsPlaying</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserPlace</servlet-name>
+		<servlet-class>org.service.recreation.UserPlace</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadSocialImage</servlet-name>
+		<servlet-class>org.service.sociality.UploadSocialImage</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>LoginCheck</servlet-name>
+		<url-pattern>/loginCheck.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DoRegister</servlet-name>
+		<url-pattern>/register.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Checkout</servlet-name>
+		<url-pattern>/checkout.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendSocialMessage</servlet-name>
+		<url-pattern>/sendSocialMessage.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ThumbUp</servlet-name>
+		<url-pattern>/thumbup.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FlushThumbUp</servlet-name>
+		<url-pattern>/flushThumbUp.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChatroomSendMessage</servlet-name>
+		<url-pattern>/chatroomSendMessage.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddFriend</servlet-name>
+		<url-pattern>/addFriend.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendFriendReq</servlet-name>
+		<url-pattern>/sendFriendReq.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListenFriendshipReq</servlet-name>
+		<url-pattern>/listenFriendshipReq.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetFriendshipReqVisited</servlet-name>
+		<url-pattern>/setFriendshipReqVisited.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckOnline</servlet-name>
+		<url-pattern>/checkOnline.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetConversationMessageVisited</servlet-name>
+		<url-pattern>/setConversationMessageVisited.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendConversationMessage</servlet-name>
+		<url-pattern>/sendConversationMessage.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeUserInfo</servlet-name>
+		<url-pattern>/changeUserInfo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadUserIcon</servlet-name>
+		<url-pattern>/uploadUserIcon.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>logAccessUnit</servlet-name>
+		<url-pattern>/logAccessUnit.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetStatistics</servlet-name>
+		<url-pattern>/getStatistics.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WordFrequency</servlet-name>
+		<url-pattern>/wordFrequency.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchPlayer</servlet-name>
+		<url-pattern>/searchPlayer.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PlayChess</servlet-name>
+		<url-pattern>/playChess.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>IsPlaying</servlet-name>
+		<url-pattern>/isPlaying.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserPlace</servlet-name>
+		<url-pattern>/userPlace.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadSocialImage</servlet-name>
+		<url-pattern>/uploadSocialImage.do</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>jsp/index/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+</web-app>

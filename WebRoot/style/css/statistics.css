@@ -1,0 +1,36 @@
+#charts_container {
+	
+}
+
+#days_chart {
+	position: relative;
+}
+
+#days_chart_container {
+	position: relative;
+	margin: 0px auto;
+}
+
+#days_chart_container h2 {
+	display: inline-block;
+}
+
+#charts_container {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 15%;
+	bottom: 55px;
+	display: block;
+	line-height: 40px;
+}
+
+#charts_container small {
+	font-size: 14px;
+}
+
+#charts_container h2 {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}

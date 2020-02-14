@@ -1,0 +1,220 @@
+/*4.3*/
+#home_page {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	padding: 8px;
+}
+
+#statistics {
+	
+}
+
+#recreation {
+	
+}
+
+#sociality {
+	overflow-y: scroll;
+}
+
+.homepage_page {
+	position: relative;
+	width: 25%;
+	height: 100%;
+	margin: 0px auto;
+	float: left;
+}
+
+.homepage_container {
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 42px;
+	right: 0%;
+}
+
+#homepage_scroll {
+	overflow: hidden;
+	height: 100%;
+	width: 400%;
+}
+
+#homepage_navi {
+	cursor: pointer;
+}
+
+#user_name {
+	display: inline;
+	width: 150px;
+}
+
+/*4-4*/
+#homepage_navi li {
+	width: 150px;
+	text-align: center;
+}
+
+#user_span {
+	width: 200px;
+	position: absolute;
+	right: 25px;
+	top: 15px;
+	text-align: center;
+}
+
+#user_info {
+	width: inherit;
+	color: #23527c;
+	position: relative;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 3px;
+	box-shadow: 1px 1px 0.5px #888888;
+	width: inherit;
+}
+
+#user_menu {
+	z-index: 9999;
+	width: inherit;
+	color: #23527c;
+	position: relative;
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 3px;
+	border-top: 0;
+	cursor: pointer;
+	box-shadow: 1px 1px 0.5px #888888;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#user_settings {
+	height: 50px;
+	line-height: 50px;
+	color: inherit;
+}
+
+#checkout {
+	height: 50px;
+	line-height: 50px;
+	color: inherit;
+}
+
+#user_menu>div:HOVER {
+	background-color: #337ab7;
+	color: #fff;
+}
+
+#user_settings_page {
+	position: relative;
+	z-index: 9999;
+	margin: -225px 0 0 -150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 350px;
+	width: 300px;
+	border: 1px solid #000;
+	border-radius: 9px;
+	box-shadow: 1px 1px 0.5px #888888;
+	z-index: 9999;
+}
+
+#user_settings_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(222, 222, 222, 0.4);
+	width: 100%;
+	border-radius: inherit;
+	padding: 30px 5px;
+}
+
+.user_icon_div {
+	height: 80px;
+	width: 80px;
+	text-align: center;
+}
+
+#settingspage_user_icon_div {
+	margin: 0 auto;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+}
+
+#settings_page_button {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	background-image: url(../imgs/sprites.png);
+	background-position-x: -261.5px;
+	background-position-y: -62.5px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+#settings_page_button:HOVER {
+	background-position-y: -312px;
+}
+
+/*4-17*/
+#user_settings_container {
+	color: #222
+}
+
+.file {
+	position: relative;
+	display: inline-block;
+	background: #D0EEFF;
+	border: 1px solid #99D3F5;
+	border-radius: 4px;
+	padding: 4px 12px;
+	overflow: hidden;
+	color: #1E88C7;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+	left: 103px;
+	margin-top: 6px;
+}
+
+.file input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.file:hover {
+	background: #AADFFD;
+	border-color: #78C3F3;
+	color: #004974;
+	text-decoration: none;
+}
+
+/*5-15*/
+.user_modify {
+	text-align: center;
+	margin-top: 18px;
+}
+
+#user_settings_container button {
+	background: #D0EEFF;
+	border: 1px solid #99D3F5;
+	border-radius: 4px;
+	padding: 4px 12px;
+	overflow: hidden;
+	color: #1E88C7;
+	text-decoration: none;
+	text-indent: 0;
+	line-height: 20px;
+}

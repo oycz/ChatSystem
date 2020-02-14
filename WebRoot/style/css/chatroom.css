@@ -1,0 +1,279 @@
+#chatroom_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+#chatroom_left {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 100%;
+	width: 300px;
+}
+
+#chatroom_right {
+	position: absolute;
+	float: left;
+	top: 0px;
+	bottom: 0px;
+	left: 300px;
+	right: 0px;
+	padding: 5px;
+}
+
+.chat_window {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	word-wrap: break-word;
+	padding: 20px;
+}
+
+#talk {
+	position: absolute;
+	bottom: 0px;
+	height: 150px;
+	width: 100%;
+	background-color: rgba(180, 0, 180, 0.3);
+}
+
+#friendslist_button {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 50px;
+	width: 50%;
+}
+
+#online_users_button {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 50%;
+	border-left: 0;
+}
+
+.chatroom_button {
+	position: relative;
+	line-height: 50px;
+	text-align: center;
+	font-size: 18px;
+	height: 50px;
+	border: 1px solid rgba(88, 88, 88, 0.6);
+	border-radius: 3px;
+	height: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#friendslist {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	bottom: 50px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#online_users {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+#chatroom_send_button {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	height: 50px;
+	width: 150px;
+	line-height: 50px;
+	font-size: 20px;
+	background-color: #337ab7;
+	border-radius: 5px;
+	box-shadow: 1px 1px 0.5px #888888;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+}
+
+#chatroom_send_button:HOVER {
+	background-color: #337aaa;
+}
+
+#chatroom_send_button:ACTIVE {
+	padding: 1px 2px 1px 4px;
+	border: 2px inset;
+	background-color: #337777;
+}
+
+#chatroom_send_context {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #222;
+	border-radius: 5px;
+	outline: 0;
+	padding: 20px;
+	resize: none;
+	font-size: 13px;
+}
+
+#chatroom_wordscount_area {
+	position: absolute;
+	right: 170px;
+	bottom: 10px;
+}
+
+.enter_to_send_button {
+	width: 40px;
+	height: 10px;
+	background: #555;
+	position: relative;
+	border-radius: 3px;
+	display: inline-block;
+	top: 8px;
+	right: 10px;
+}
+
+.enter_to_send_button label {
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	background: #ccc;
+}
+
+.enter_to_send_button input[type=checkbox]:checked+label {
+	left: 27px;
+	background-color: #66DD00;
+}
+
+#enter_to_send {
+	position: absolute;
+	bottom: 13px;
+	right: 230px;
+}
+
+#check-box {
+	visibility: hidden;
+}
+
+.chatroom_list {
+	position: relative;
+	width: 100%;
+}
+
+.chatroom_list li:nth-of-type(odd) {
+	background-color: rgba(0, 153, 204, 0.6);
+}
+
+.chatroom_list li:nth-of-type(even) {
+	background-color: rgba(255, 255, 204, 0.6);
+}
+
+.chatroom_list_item {
+	position: relative;
+	text-align: center;
+	line-height: 40px;
+}
+
+.chatroom_list_item:hover {
+	background-color: rgba(100, 100, 225, 0.6) !important;
+}
+
+#addfriend_notice {
+	float: right;
+	margin-right: 10px;
+}
+
+.chatroom_message_list_item {
+	font-size: 20px;
+	list-style-type: none;
+	margin-bottom: 6px;
+}
+
+#chat_select {
+	height: 40px;
+	width: 100%;
+}
+
+#chat_windows {
+	position: absolute;
+	top: 40px;
+	bottom: 150px;
+	width: 100%;
+}
+
+.chatmessage_info {
+	color: #0066cc;
+}
+
+.chatmessage_content {
+	margin-left: 6px;
+}
+
+.chatroom_list_item img {
+	margin: 0px auto;
+}
+
+.chatroon_list_item span {
+	float: right;
+}
+
+#friendlist_name {
+	height: 100%;
+	width: 200px;
+	position: relative;
+	left: 100px;
+}
+
+#friend_list_item {
+	line-height: 100px;
+}
+
+.friendlist_icon {
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	height: 80px;
+	width: 80px;
+}
+
+.close_window_button {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	/* border: 1px solid #ccc; */
+	background-image: url(../imgs/chahao.png);
+	border-radius: 3px;
+	/* background-color: rgba(180, 25, 25, 0.6); */
+	border-radius: 3px;
+	background-position-x: -1px;
+	background-position-y: -1px;
+}
+
+/*5.29*/
+#emoji_btn {
+	position: absolute;
+	right: 10px;
+	bottom: 160px;
+}

@@ -1,0 +1,20 @@
+#chess {
+	position: relative;
+	right: 250px;
+	bottom: 250px;
+	margin-top: 22%;
+	margin-left: 50%;
+}
+
+#chess_control {
+	position: relative;
+	text-align: center;
+	margin-top: 15%;
+	bottom: 55px;
+	display: block;
+	line-height: 40px;
+}
+
+#chess_control h1 {
+	margin-bottom: 40px;
+}

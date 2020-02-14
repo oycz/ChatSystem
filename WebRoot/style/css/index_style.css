@@ -1,0 +1,184 @@
+/*2017-3-23*/
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.index_container {
+	width: 300px;
+	margin: 0px auto;
+}
+
+.index_notice {
+	padding: 10px;
+	height: 150px;
+	padding: 10px;
+}
+
+.index_form {
+	height: 440px;
+}
+
+.index_form div {
+	padding: 10px 0;
+	width: 50%;
+	text-align: center;
+	height: 50px;
+	font-size: 16px;
+}
+
+/*2017-3-27*/
+#index_login li, #index_register li {
+	width: 300px;
+	margin: 1px 0;
+}
+
+.submit_button {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	box-shadow: none;
+	cursor: pointer;
+	display: block;
+	line-height: 40px;
+	margin: 0px auto;
+	margin-top: 3px;
+	outline-color: rgb(255, 255, 255);
+	text-align: center;
+	text-shadow: rgba(0, 0, 0, 1) 0px 0.5px 0.5px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fff;
+	white-space: normal;
+	word-spacing: 0px;
+	writing-mode: horizontal-tb;
+	width: 280px;
+	height: 40px;
+}
+
+#index_login {
+	height: 440px !important;
+	width: 300px !important;
+}
+
+#index_register {
+	height: 440px !important;
+	width: 300px !important;
+}
+
+/*3-29*/
+#show-selected {
+	border: 2px solid #c5c5c5;
+	border-radius: 3px;
+	position: absolute;
+}
+
+#index_bg {
+	position: absolute;
+	z-index: -9999;
+}
+
+.index_container {
+	margin-top: 40px;
+}
+
+#show-selected {
+	width: 150px !important;
+}
+
+/*3.30*/
+.index_form {
+	position: relative;
+}
+
+#login_list {
+	margin-top: 60px;
+}
+
+#register_list {
+	margin-top: 60px;
+}
+
+#index_login input, #index_register input {
+	line-height: 36px;
+	font-size: 14px;
+	padding: 0 10px;
+	width: 100%;
+}
+
+/*4-1*/
+#login_error_password {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+	color: #c33;
+	font-size: 11px;
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	color: #c33;
+}
+
+#login_error_info {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+	color: #c33;
+	font-size: 11px;
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	color: #c33;
+}
+
+/*4-3*/
+#register_error_email {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+	color: #c33;
+	font-size: 11px;
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	color: #c33;
+}
+
+#register_error_name {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+	color: #c33;
+	font-size: 11px;
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	color: #c33;
+}
+
+#register_error_confirm {
+	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+	color: #c33;
+	font-size: 11px;
+	position: absolute;
+	line-height: 40px;
+	right: 8px;
+	color: #c33;
+}
+
+#register_succeed {
+    z-index: 9999;
+    padding: 20px 15px 20px 15px;
+    margin: -45px 0 0 -100px;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    height: 90px;
+    width: 200px;
+    border: 1px solid #555;
+    border-radius: 9px;
+    margin: -45px 0 0 -100px;
+    background-color: #eef;
+}
+
+#register_succeed_info {
+	color: black;
+	font-size: 22px;
+	margin: 10px auto;
+}
